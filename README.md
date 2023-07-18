@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+# Weather App
+This is a React app designed to help your grandfather check the weather conditions for his city before going fishing. By using real-time data from an API, he can easily determine if the weather is suitable for fishing or not.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
+To run the project, follow these steps:
 
-## Available Scripts
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run the following command to install the required dependencies:
+npm install or yarn install
+4. Once the installation is complete, start the development server with the following command:
+npm start or yarn start
+5. Open your browser and visit http://localhost:3000 to view the Weather App.
 
-In the project directory, you can run:
+## Installation of Dependencies
+Before running the app, make sure to install the following packages:
 
-### `npm start`
+- lodash: Install the lodash package by running the following command:
+npm install lodash or yarn add lodash
+- axios: Install the axios package by running the following command:
+npm install axios or yarn add axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Search Component
+The Search component allows users to search for cities and retrieve weather information. It utilizes a real API for handling the search action and incorporates debouncing for a smoother user experience. The search results can be displayed as a dropdown or a list, depending on your preference.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Weather component:
+The Weather component displays important weather information for a specific city. It includes the city name, weather conditions, temperature in Celsius, and additional details such as feels like, wind, humidity, and pressure.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future Forecast component:
+The FutureForecast component displays the forecast for the next seven days. Each day is shown in a separate row and includes an icon representing the daily weather summary, the day's name, maximum and minimum temperature, and a description of the weather. Clicking on a day will reveal additional information about pressure, clouds, sea level, humidity, wind speed, and feels like temperature.
